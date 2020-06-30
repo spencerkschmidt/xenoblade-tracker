@@ -1,0 +1,4 @@
+dialog.notSaved=You have not saved! Do you still wish to exit?
+dialog.closeWithoutSaving=Close without saving?
+dialog.yes=Yes
+dialog.no=No

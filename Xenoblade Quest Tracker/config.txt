@@ -1,0 +1,7 @@
+# The option for toggling the autosave feature.
+autosave=true
+# The option for toggling if recent files will be kept track of.
+keepTrackRecents=true
+# The maximum number of recent files to keep in history.
+maxNumberOfRecents=5
+language=en_CA

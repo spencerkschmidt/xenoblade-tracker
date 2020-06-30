@@ -1,0 +1,131 @@
+v1.1.0
+~~~~~~
+- Quest tracker created with only the ability to track quests.
+
+v1.2.0
+~~~~~~
+- Added the ability to track Unique Monsters.
+- Changed the method in which saving is dealt with from a normal '.dat' file to a '.json' file.
+
+v1.3.0
+~~~~~~
+- Added the ability to track Manuals.
+- Disabled the search bar for quests as it worked improperly.
+
+v1.4.0
+~~~~~~
+- Changed some of the internal handling of the way in which mutual quests are dealt with.
+- Re-enabled the search bar as it was disabled in the previous update.
+
+v1.5.0
+~~~~~~
+- Changed the internal handling of the Quests tracker.
+
+Fixes:
+- Search bar now works properly when the search bar is empty. Quests that were selected before are now still selected after.
+
+v1.6.0
+~~~~~~
+- Added achievements tracker that allows for the tracking of Trials and Records.
+
+v1.7.0
+~~~~~~
+- Added the ability to check the changelog into the tracker itself.
+- Added the ability for the tracker to save all the recently opened files.
+- Added the ability to open the containing folder of the currently opened file.
+- Added the ability to track the collectopaedia.
+- Changed how the search bar works for searching quests. Instead of it checking if the quest name starts with the
+  entered text, it now checks if the quest name contains the entered text allowing for not as strict searching.
+- Did some changes to the UI so that all components stay the same size, and aligned, on all views.
+- Added icons to the Open, Save, and Save As options.
+
+Fixes:
+- Changed the spelling of 'MAchina' on the Trial "A Village of Machines" to 'Machina.'
+- Changed the spelling of the two Collection Quests in Eryth Sea from 'Collect Quest.'
+- Changed the spelling of the quest 'Looking for the Taste of Alcohol' to 'Losing the Taste of Alcohol.'
+- When loading a new file, Achievements would not properly update the amount completed.
+
+v1.8.0
+~~~~~~
+- Added an autosave feature which can be enabled or disabled. After any change is made, the changes are saved.
+- Added a settings menu which allows enabling and disabling the autosave feature.
+- Added a configuration file. It currently only keeps track of whether autosave is enabled or not.
+- When the tracker has not saved, it will display an '*' beside the title of the window.
+- Made some more internal changes to the way the all trackers are handled.
+- Changed the View option 'Advanced Manuals' to just 'Manuals' as it keeps track of both Advanced and Master manuals.
+- Added a search bar to the Achievements view, Uniques view, and Manuals view.
+
+Fixes:
+- In Fiora's Manual 'Double Blade', there was multiple spaces between the words.
+- Reyn's Advanced Manual 'Lariat' was named 'Manual'.
+- When selecting the All Manuals option, if an Advanced Manual was 'obtained', the Master Manual that shared its name would also be selected.
+
+v1.8.1
+~~~~~~
+- Added the ability to search for multiple items in the Uniques, Achievements, and Manuals search bar.
+
+v1.8.2
+~~~~~~
+- Can separate search terms by the '&' symbol and by using the keyword AND, which is case sensitive. This means that using 'and' or 'AnD' will not work.
+
+Fixes:
+- When having an item selected in Achievements or Uniques view then going to a view other than the current one, then going to another view, it would give an IndexOutOfBoundsError.
+- Prevents an empty search section in the search bar from effecting the search.
+- Having a space at the end of a search term would nullify its effect on the search.
+
+v1.8.3
+~~~~~~
+- Added progress bars to all pages in the Collectopaedia.
+- When hovering over a tab in the Collectopaedia view, it will show that area's progress.
+- When hovering over a tab in the Quests view, it now displays that area's completion progress.
+- When all items in an area have been collected in the Collectopaedia view, a crown icon will appear on that area's tab.
+- When all quests in an area have been completed, a crown icon will appear on that area's tab.
+
+v1.9.0
+~~~~~~
+- Gave the changelog scroll window a look change.
+- Added a close button to the changelog window.
+- The changelog window is now defaultly larger when opened.
+- Changed the changelog window's background colour to white.
+- Changed the colour of Normal Quests, Mutual Quests, and Story Quests.
+- Changed the way in which the current views are handled internally. When selecting a view from the view menu, the button will not be grayed out when selected.
+- Changed the way files are saved. They now contain a version tag which will allow for some backwards compatibility when the format is changed in the future for when Future Connected items are added.
+- Changed the layout of the recent files menu option. Instead of all recently opened files being displayed in the list, they are now listed in a submenu.
+- Can now drag and drop a file onto the window to open that file.
+- Can now resize the window to any size.
+- Can no longer click a table's header column to sort by that column as doing so would give the incorrect item selected.
+- Removed the autosave option from the Settings menu.
+- Added a new menu in the Settings menu called Preferences. Autosave has been moved into this menu.
+- Added a new option for setting the maximum number of recently opened files.
+- Added a new option for whether or not recent files will be kept track of.
+- Added the ability to track heart-to-hearts.
+
+Fixes:
+- Changed the spelling of the Riki's Master Manual 'Burniate' to 'Burninate'.
+- Save file would not properly detect if the file being saved to was a '.json' file type.
+- Cannot sort Unique Monsters by Bionis' Interior.
+- When searching for things that have not been collected with the search term 'false', only items that have been checked and unchecked will show up.
+- If having text in a searchbar for either Uniques, Achievements, or Manuals, it could sometimes not record the correct value clicked.
+
+1.9.1
+~~~~~
+- Added the ability to track the affinities between party members.
+- Changed the icon for Heart-to-Hearts.
+- The icon for affinity is now the icon that was used for Heart-to-Hearts.
+
+1.9.2
+~~~~~
+Fixes:
+- When setting the affinity between two people, the non-current person's affinity would display as changed, but would not be saved.
+
+2.0.0
+~~~~~
+- Added the ability to select all/deselect all item in all views. For quests and collectopaedia, it only unselects all of the items in the current tab.
+- Added the ability to close out of the current file.
+- Removed the View menu and instead made each view into a tabbed window to prepare for when other Xenoblade games are added to the tracker, such as Future Connected.
+- Character in the affinity tab now have an icon for when they are being hovered over with the mouse.
+
+Fixes:
+- When selecting/unselecting quests that are mutual, but not on the same quest list, it would not update the tab's tooltip, and thus would not update the tab's completion icon.
+- Sometimes, when making changes while having no file open, the program would consider the file not saved, even after opening a new file.
+- When loading a file and on the Collectopaedia page, sometimes a value wouldn't load correctly if a row/column was clicked on.
